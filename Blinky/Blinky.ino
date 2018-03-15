@@ -1,8 +1,8 @@
-/*********************************
-Ejemplo básico.
-Autor: D'Angiolo, Federico Gabriel
-Blinky
-*********************************/
+/****************************************************************
+Programa Ejemplo: Blinky
+Autor:D'Angiolo, Federico Gabriel
+Arduino UNO
+****************************************************************/
 
 #define Led_1 13   //En el pin 13 se encuentra el LED rojo
 #define Led_2 1    //En el pin 1 se encuentra el LED adicional
