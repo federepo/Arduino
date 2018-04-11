@@ -4,9 +4,9 @@
 
 const int pin_ds18b20 = 8;  // Pin donde se conectará el sensor (1-Wire)
 
-// Se instancia a las clases OneWire y DallasTemperature
 
-OneWire sensor_one_wire(pin_ds18b20);         
+ 
+OneWire sensor_one_wire(pin_ds18b20);                // Se instancia a las clases OneWire y DallasTemperature    
 DallasTemperature sensor_ds18b20(&sensor_one_wire);
 
 
@@ -20,7 +20,6 @@ void setup() {
 
 void loop() {
   
- //   Serial.println("Iniciando la comunicación...");
     sensor_ds18b20.requestTemperatures();             // Envío de comandos al sensor
  
     Serial.print("Temperatura: ");
