@@ -10,7 +10,7 @@ int Pin_estado = 0;         // Variable que chequea el estado del pin
 
 void setup() {
   
-  pinMode(Pin_led, OUTPUT);  // Se inicializa al pin 13 como salida
+  pinMode(Pin_led, OUTPUT);  // Se inicializa al pin 8 como salida
   
   pinMode(Pin_switch, INPUT); // Se inicializa al pin 3 como entrada
   
