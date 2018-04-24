@@ -10,5 +10,6 @@ i=1
 while (i<2):
     dato_arduino = com_arduino.readline()
     print(dato_arduino)
+   
 
 

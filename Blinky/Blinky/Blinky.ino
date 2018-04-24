@@ -3,7 +3,7 @@ Programa Ejemplo: Blinky
 Arduino UNO
 ****************************************************************/
 
-#define Led_1 7   //En el pin 7 se conectará el LED 
+int Led_1 = 7;   //En el pin 7 se conectará el LED 
 
 void setup() {
 
