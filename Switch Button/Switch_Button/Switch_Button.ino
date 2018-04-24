@@ -3,7 +3,7 @@ Programa Ejemplo: Switchs
 Arduino UNO
 ****************************************************************/
 
-int Pin_switch = 3;     // Pin donde se encuentra el pulsador
+int Pin_switch = 0;     // Pin donde se encuentra el pulsador
 int Pin_led =  8;      //  Pin donde se encuentra el LED
 
 int Pin_estado = 0;         // Variable que chequea el estado del pin
