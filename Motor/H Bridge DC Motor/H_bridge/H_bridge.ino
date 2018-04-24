@@ -10,8 +10,8 @@ LOW    HIGH      REVERSE
 LOW    LOW        STOP
 ****************************************************************/
 
-int IN1 = 1; 
-int IN2 = 2;
+int IN1 = 3; 
+int IN2 = 4;
 
 void setup()
 {
