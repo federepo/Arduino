@@ -5,7 +5,7 @@
 //Arduino UNO
 //******************************************
 
-int ledPin = 7;      // LED connected to digital pin 7
+int ledPin = 9;      // LED connected to digital pin 7
 
 int val = 0;         // 
 
