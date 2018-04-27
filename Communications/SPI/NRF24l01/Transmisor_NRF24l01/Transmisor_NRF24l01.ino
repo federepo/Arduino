@@ -14,11 +14,9 @@
 #define CS_PIN 10              // Pin Chip Select
 #define ADRESS 0xF0F0F0F0F0    // 40-bit hex value
 
-RF24 radio(CE_PIN, CS_PIN);  // Se crea el objeto radio (NRF24L01)
+RF24 radio(CE_PIN, CS_PIN);  // Se crea el objeto radio
  
-
-
-float *data = NULL;  // datos analógicos a tomar
+float *data = NULL;  // datos analógicos a tomar desde el sensor
 bool envio = 0;      // envío de datos
 
 void setup()
