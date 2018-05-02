@@ -12,17 +12,17 @@ void setup() {
 
 void loop() {
   
-  int input = 0;
-  float voltage = 0;
-  float temperature = 0;
+  int entrada = 0;
+  float tension = 0;
+  float temperatura = 0;
     
-  input = analogRead(analog_pin);    // Se lee el valor sensado por el LM35
+  entrada = analogRead(analog_pin);    // Se lee el valor sensado por el LM35
  
-  voltage  = (5 / 1024.0) * input; // Se convierte el valor en °C a V
+  tension  = (5 / 1024.0) * entrada; // Se convierte el valor en °C a V
   
-  temperature = voltage / 0.01;       // Se convierte la tensión a grados celsius
+  temperatura = tension / 0.01;       // Se convierte la tensión a grados celsius
    
-  Serial.println(temperature);
+  Serial.println(temperatura);
   
   delay(1000); 
 }
