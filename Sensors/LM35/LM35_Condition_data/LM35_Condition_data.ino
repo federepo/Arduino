@@ -37,7 +37,7 @@ void loop() {
 
   else  
   
-   digitalWrite(led_pin, HIGH);
+   digitalWrite(led_pin, LOW);
    
    Serial.println(temperatura);
     
