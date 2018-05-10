@@ -10,9 +10,9 @@ SoftwareSerial AT_B(10,11);   // Se definen cuáles serán los pines de Rx y Tx
 void setup()
 {
   
-  AT_B.begin(9600);       // Se inicializa la comunicación serie con el Bluetooth
+  AT_B.begin(38400);       // Se inicializa la comunicación serie con el Bluetooth
   
-  Serial.begin(9600);   // Se inicializa la comunicación serie con la PC (monitor serial)
+  Serial.begin(38400);   // Se inicializa la comunicación serie con la PC (monitor serial)
   
 }
  
