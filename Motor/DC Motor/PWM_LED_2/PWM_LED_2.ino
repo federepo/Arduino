@@ -5,26 +5,29 @@
 //Arduino UNO
 //***************************************************************
 
-int ledPin = 9;      // Motor conectado al pin 9
+int ledPin = 3;      // LED conectado al pin 3
 
 int val = 0;         // Valor entre 0 y 255
 
 void setup()
 {
-  pinMode(ledPin, OUTPUT);   // inicializa al pin 9 como salida
+  pinMode(ledPin, OUTPUT);   // inicializa al pin 3 como salida
   Serial.begin(9600);
 }
 
 void loop()
 {
 
-  val = 55;
-   
+for(val=0; val<= 255; val++){
+
   analogWrite(ledPin, val);  // Se escribe un número entre 0 y 255
-                             // para variar el ancho del pulso.
-  
-  Serial.print("Valor actual:");
+                             // para variar el ancho del pulso
   Serial.println(val);
   
+  delay(30);
+}
+
+
+     
 }
 

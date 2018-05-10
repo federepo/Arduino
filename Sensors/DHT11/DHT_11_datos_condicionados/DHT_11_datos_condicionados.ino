@@ -11,10 +11,13 @@ Arduino UNO
 
 DHT dht(DHTPIN, DHTTYPE);  //Se indica el pin a usar y el tipo de sensor
 
+int led_pin = 13;
+
 void setup() {
 
    dht.begin();           // Se inicializa al sensor
    Serial.begin(9600);    // Se inicializa la comunicación serie
+   pinMode(led_pin,OUTPUT);
 
 }
 
@@ -37,4 +40,16 @@ void loop() {
   Serial.print("Temperatura: ");
   Serial.print(temperatura_C);
   Serial.println(" °C ");
+
+  if(humedad_rel > 80 && temperatura_C>26){
+
+     digitalWrite(led_pin,HIGH);
+    
+  }
+
+  else
+
+     digitalWrite(led_pin,LOW);
+
+ 
   }
