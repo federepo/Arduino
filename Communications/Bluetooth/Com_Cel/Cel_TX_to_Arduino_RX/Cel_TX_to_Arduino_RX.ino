@@ -1,5 +1,5 @@
 /********************************************************************
-Programa Ejemplo: Transmisión de datos con celular. 
+Programa Ejemplo: Transmisión de datos desde celular hacia Arduino. 
 Arduino UNO
 ********************************************************************/
 
