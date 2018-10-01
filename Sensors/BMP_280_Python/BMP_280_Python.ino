@@ -12,6 +12,9 @@
 
 #define led 13
 
+float temperature;  // Variable for holding temp in C
+
+float pressure; //Variable for holding pressure reading
  
 Adafruit_BMP280 sensor; 
  
@@ -28,20 +31,19 @@ while (!sensor.begin(0x76)) {
 }
  
 void loop() {
-  
- Serial.print("Temperatura: ");
-  
- Serial.print(sensor.readTemperature());
- 
- Serial.println(" °C");
- 
- Serial.print("Presión: ");
 
- Serial.print(sensor.readPressure());
+temperature = sensor.readTemperature(); //  Be sure to declare your variables
 
- Serial.println(" Pa");
- 
- Serial.println();
- 
- delay(1000);
+pressure=sensor.readPressure(); //Read Pressure
+
+Serial.flush();
+  
+Serial.print(temperature);
+
+Serial.print(" , ");
+
+Serial.println(pressure);
+
+delay(1500); //Pause between readings.
+
 }
