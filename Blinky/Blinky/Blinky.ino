@@ -1,23 +1,23 @@
 /****************************************************************
-Programa Ejemplo: Blinky
-Arduino UNO
+Program: Blinky
+Board: Arduino UNO
 ****************************************************************/
 
-int Led_1 = 7;   //En el pin 7 se conectará el LED 
+int Led_1 = 7;                // LED in pin 7
 
 void setup() {
 
-  pinMode(Led_1, OUTPUT);     //Se configura al pin 7 como salida
+  pinMode(Led_1, OUTPUT);     // pin 7 like OUTPUT
 
 }
 
 void loop() {
 
-  digitalWrite(Led_1, HIGH);   // Se enciende el LED
+  digitalWrite(Led_1, HIGH);   // LED ON
   
-  delay(500);                       // demora de 600ms
+  delay(500);                  // delay 500 ms
   
-  digitalWrite(Led_1, LOW);    // Se apaga el LED
+  digitalWrite(Led_1, LOW);    // LED OFF
   
-  delay(500);                       // demora de 600ms
+  delay(500);                  // delay 500ms
 }
