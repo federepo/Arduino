@@ -15,7 +15,7 @@ Arduino: Arduino UNO
 
 #include <SoftwareSerial.h>
 
-SoftwareSerial mySerial(10, 11); // RX, TX
+SoftwareSerial mySerial(4,6); // RX, TX
 
 void setup() {
 
@@ -39,7 +39,6 @@ void loop() {
                                    // Return the character read, or -1 if none is available
 
     
-
 
     delay(500);
   }
