@@ -15,7 +15,11 @@ Arduino: Arduino UNO
 
 #include <SoftwareSerial.h>
 
+<<<<<<< HEAD
 SoftwareSerial mySerial(4,6); // RX, TX
+=======
+SoftwareSerial mySerial(4, 6); // RX, TX
+>>>>>>> 4a83a953f69c6c3ab32690251b4bf3d742764121
 
 void setup() {
 
