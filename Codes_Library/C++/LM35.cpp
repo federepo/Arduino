@@ -15,12 +15,12 @@ LM35::LM35()
 
 float LM35::cels()
 {
-   return tempC = (float(analogRead(_pin))*5/(1023))/0.01;
+   return (float(analogRead(_pin))*5/(1023))/0.01;
 }
 
 float LM35::fah()
 {
-   return tempF = (((float(analogRead(_pin))*5/(1023))/0.01)*1.8)+32;
+   return (((float(analogRead(_pin))*5/(1023))/0.01)*1.8)+32;
 }
 
 
