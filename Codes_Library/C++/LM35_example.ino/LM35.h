@@ -27,4 +27,3 @@ class LM35
 };
 
 #endif
-
