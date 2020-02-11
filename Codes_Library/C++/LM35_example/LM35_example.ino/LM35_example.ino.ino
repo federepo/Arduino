@@ -16,11 +16,7 @@ Serial.begin(9600);
 
 void loop() {
 
-LM35 my_sensor;
-
-//Variables for temperature in Celsius and Fahrenheit
-float temp_Cels = 0;
-float temp_Farh = 0; 
+LM35 my_sensor(A0);
 
 //Obtain and print temperature in Celsius
 Serial.println("Temperature in Celsius  ");

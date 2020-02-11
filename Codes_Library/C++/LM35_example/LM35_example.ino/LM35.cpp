@@ -9,14 +9,20 @@
 #include "Arduino.h"
 #include "LM35.h"
 
+LM35::LM35(uint8_t pin)
+{
+    pinMode(pin, OUTPUT);
+    _pin = pin;
+}
+
 float LM35::cels()
 {
-    float tempC = (float(analogRead(A0))*5/(1023))/0.01;
+    float tempC = (float(analogRead(_pin))*VREF_5/(ADC_R))/VpC;
     return tempC;
 }
 
 float LM35::fahr()
 {
-   float tempF = (((float(analogRead(A0))*5/(1023))/0.01)*1.8)+32;
+   float tempF = (((float(analogRead(_pin))*VREF_5/(ADC_R))/VpC)*1.8)+32;
    return tempF;
 }
