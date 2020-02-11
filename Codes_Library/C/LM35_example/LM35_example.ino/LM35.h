@@ -11,20 +11,12 @@
 
 #include "Arduino.h"
 
-class LM35
-{
-
-  public:
-
-      // constructor
-      LM35();
-
+    
       // return temperature in celsius
       float cels();  
  
       // return temperature in fahrenheit
       float fahr();     
-};
+
 
 #endif
-

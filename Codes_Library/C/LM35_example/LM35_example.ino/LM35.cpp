@@ -7,20 +7,18 @@
 *******************************************************************/
 
 #include "Arduino.h"
-#include "Morse.h"
+#include "LM35.h"
 
-LM35::LM35()
-{
-}
 
-float LM35::cels()
+float cels()
 {
-   return tempC = (float(analogRead(_pin))*5/(1023))/0.01;
-}
-
-float LM35::fah()
-{
-   return tempF = (((float(analogRead(_pin))*5/(1023))/0.01)*1.8)+32;
+    float tempC = (float(analogRead(A0))*5/(1023))/0.01;
+    return tempC;
 }
 
 
+float fahr(void)
+{
+   float tempF = (((float(analogRead(A0))*5/(1023))/0.01)*1.8)+32;
+   return tempF;
+}
