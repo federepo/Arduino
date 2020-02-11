@@ -11,7 +11,6 @@
 
 LM35::LM35(uint8_t pin)
 {
-    pinMode(pin, OUTPUT);
     _pin = pin;
 }
 
