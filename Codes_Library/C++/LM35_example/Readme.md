@@ -3,15 +3,37 @@
 ## Dcoumentation
 
 - [Introduction](#Introd)
-- [information](#information)
+- [Usage](#usage)
 - [Version](#Version)
  
 ### Introduction<a name = Introd></a>
 
-This library works with LM35 sensor. Return temperature in Celsius and Kelvin grades
+This library works with LM35 sensor. 
+Returns the temperature value in degrees Celcius and Kelvins
 
-### Information<a name = Information></a>
+### Information<a name = usage></a>
 
+## Usage
++ Include library file header
+```cpp
+#include <LM35.h>
+```
++ Create an object wich parameter corressponds to the analag pin is connected to on the Arduino.
+```cpp
+LM35 lm35(A0);
+```
+
++ In *loop()* function, use function:
+```cpp
+LM35.cels();
+```
+> This function returns the temperature in celsius
+
++ Temperature in Fahrenheit
+```cpp
+LM35.fahr();
+> This function returns the temperature in Fahrenheit
+```
 
 ### Version and date<a name = Version></a>
 
