@@ -20,20 +20,21 @@ Returns the temperature value in degrees Celcius and Kelvins
 ```
 + Create an object wich parameter corressponds to the analag pin is connected to on the Arduino.
 ```cpp
-LM35 lm35(A0);
+LM35 my_sensor(A0);
 ```
 
 + In *loop()* function, use function:
 ```cpp
-LM35.cels();
+my_sensor.cels();
 ```
 > This function returns the temperature in celsius
 
 + Temperature in Fahrenheit
 ```cpp
-LM35.fahr();
-> This function returns the temperature in Fahrenheit
+my_sensor.fahr();
 ```
+
+> This function returns the temperature in Fahrenheit
 
 ### Version and date<a name = Version></a>
 
